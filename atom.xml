@@ -4,7 +4,7 @@
   <title><![CDATA[GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T18:08:39+08:00</updated>
+  <updated>2017-04-22T18:44:05+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -115,10 +115,10 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac终端Item2 Solarized主题配置]]></title>
-    <link href="http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config/"/>
+    <title type="html"><![CDATA[Mac终端iTerm2 Solarized主题配置]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/22/mac-iterm2-solarized-theme-config/"/>
     <updated>2017-04-22T17:34:08+08:00</updated>
-    <id>http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config</id>
+    <id>http://wangwang4git.github.io/blog/2017/04/22/mac-iterm2-solarized-theme-config</id>
     <content type="html"><![CDATA[<h4>配色方案下载</h4>
 
 <ol>
@@ -133,7 +133,7 @@
 <ol>
 <li>进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；</li>
 <li>iTerm2设置->Profiles->Colors->Color Presets…;<br/>
-<img src="../images/mac_item2/item2_theme_config.jpeg" alt="item2主题配置" /></li>
+<img src="../images/mac_iterm2/iterm2_theme_config.jpeg" alt="item2主题配置" /></li>
 </ol>
 
 
