@@ -4,7 +4,7 @@
   <title><![CDATA[GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T17:27:21+08:00</updated>
+  <updated>2017-04-22T17:56:09+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -12,6 +12,99 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PaperPass使用体验一]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/22/paperpass-experience-1/"/>
+    <updated>2017-04-22T17:47:38+08:00</updated>
+    <id>http://wangwang4git.github.io/blog/2017/04/22/paperpass-experience-1</id>
+    <content type="html"><![CDATA[<blockquote><p>来自2013年搭建的<code>GitPages</code>的第一篇文章<br/>
+如论文中致谢的抬头：“珞珈六载，繁花七月，回望来时路，伤别离。”</p></blockquote>
+
+<p>从2007年9月的欣喜懵懂，时至今日的遗憾不舍。遗憾自己的改变，小时候想做科学家但现在一失足成了码农；不舍珞珈的风景，没有牛逼的单反没有入流的拍摄水平没有上档次的长相，残存心底的风景姑且算是纪念吧。</p>
+
+<p>论文初稿告一段落，从4月11日落笔到5月7日打印，有过停滞有过熬夜，但还好一切还在掌控之中。论文正文完成之时，使用过PaperPass、中国知网进行重复率查询，也正是基于PaperPass的使用，才促使自己想在毕业之前写下此文，一来满足自己的好奇心，二来自己的一番疑惑，为什么这么多同学使用过PaperPass，也遇到过PaperPass不靠谱的对比结果，就没有一个人出来分享，既然自己疑惑，那就自己帮自己解决吧。</p>
+
+<h4>1.PaperPass的前世今生</h4>
+
+<p>引用百度百科PaperPass:<br/>
+1. 2007年5月——PaperPass团队成立，开始研发论文抄袭检测系统。<br/>
+2. 2008年1月——测试版本推出，并且进行了大规模的内部测试。<br/>
+3. 2008年3月——正式版本V1.0推出,网站开始运营。<br/>
+4. 2010年8月——V2.0开发完毕，正式上线。<br/>
+5. 2013年1月——官网永久性关闭。</p>
+
+<p>你也许很奇怪，PaperPass发展好端端的，测试版、1.0、2.0，怎么突然关闭熄火了？2012年12月PaperPass经营者A(出于尊重，化名代替)因涉嫌非法侵入计算机信息系统罪被南京玄武警方批准逮捕。问题就出在2.0版本！</p>
+
+<p>引用凤凰网资讯男子研发软件盗9000万份论文开网站两年赚千万：</p>
+
+<p><img src="../images/paperpass/PaperPass1.png" alt="PaperPass作者被逮捕" /></p>
+
+<p>事件缘由总结如下：<br/>
+1. 2007年左右A入学南京某高校，追随导师成立论文比对系统PaperPass团队；<br/>
+2. 2008年PaperPass团队上线测试版，提供本校师生免费使用，论文数据库来自学校花钱购买，论文数量很少；<br/>
+3. 2008年PaperPass团队上线版本1.0，开放付费服务，但市场反响平淡；<br/>
+4. 2009年导师因病入院，A开始全权负责开发工作；<br/>
+5. 2010年PaperPass团队上线版本2.0，价廉质优(10元万字，其他平台20元~100元万字)，迅速抢占论文比对市场一席之地，同时被国内某知名期刊网站盯上；<br/>
+6. 2012年A被南京玄武警方批准逮捕，真相大白，版本2.0后台海量论文数据库(9000多万份)均窃取自国内某知名期刊网站。</p>
+
+<p>本人对上述事件不置可否，我想你和我一样在选择国内某知名期刊网站进行论文重复率检测的时候，心里面应该有了自己的一番想法。</p>
+
+<p>言归正传，既然PaperPass已经被关闭，其官网paperpass.org也已经被南京玄武警方关闭，目前市面上各种各样的PaperPass(包括淘宝上的)就是忽悠骗钱之流。目前假冒PaperPass官网的网址如下：www.gopaperpass.com、www.paperpass.com.cn，www.passpaper.org，www.paperpass.so，仿冒网站最大特点就是加入PaperPass或类似单词。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mac终端Item2 Solarized主题配置]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config/"/>
+    <updated>2017-04-22T17:34:08+08:00</updated>
+    <id>http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config</id>
+    <content type="html"><![CDATA[<h4>配色方案下载</h4>
+
+<ol>
+<li>Solarized仓库；
+
+<blockquote><p><a href="https://github.com/altercation/solarized">https://github.com/altercation/solarized</a></p></blockquote></li>
+</ol>
+
+
+<h4>设置配色方案</h4>
+
+<ol>
+<li>进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；</li>
+<li>iTerm2设置->Profiles->Colors->Color Presets…;<br/>
+<img src="../images/mac_item2/item2_theme_config.jpeg" alt="item2主题配置" /></li>
+</ol>
+
+
+<h4>设置VIM配色</h4>
+
+<ol>
+<li>进入目录solarized/vim-colors-solarized/colors，拷贝solarized.vim到目录~/.vim/colors；</li>
+<li>配置vim.rc；</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>syntax enable
+</span><span class='line'>set background=dark
+</span><span class='line'>colorscheme solarized</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>设置ls配色</h4>
+
+<ol>
+<li>~/.bash_profile配置；</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export CLICOLOR=1</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>

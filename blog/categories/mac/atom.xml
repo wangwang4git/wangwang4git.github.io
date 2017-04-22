@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mac | GoodMan007]]></title>
+  <link href="http://wangwang4git.github.io/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://wangwang4git.github.io/"/>
+  <updated>2017-04-22T17:56:09+08:00</updated>
+  <id>http://wangwang4git.github.io/</id>
+  <author>
+    <name><![CDATA[victor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac终端Item2 Solarized主题配置]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config/"/>
+    <updated>2017-04-22T17:34:08+08:00</updated>
+    <id>http://wangwang4git.github.io/blog/2017/04/22/mac-item2-solarized-theme-config</id>
+    <content type="html"><![CDATA[<h4>配色方案下载</h4>
+
+<ol>
+<li>Solarized仓库；
+
+<blockquote><p><a href="https://github.com/altercation/solarized">https://github.com/altercation/solarized</a></p></blockquote></li>
+</ol>
+
+
+<h4>设置配色方案</h4>
+
+<ol>
+<li>进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；</li>
+<li>iTerm2设置->Profiles->Colors->Color Presets…;<br/>
+<img src="../images/mac_item2/item2_theme_config.jpeg" alt="item2主题配置" /></li>
+</ol>
+
+
+<h4>设置VIM配色</h4>
+
+<ol>
+<li>进入目录solarized/vim-colors-solarized/colors，拷贝solarized.vim到目录~/.vim/colors；</li>
+<li>配置vim.rc；<br/>
+<code>
+syntax enable
+set background=dark
+colorscheme solarized
+</code></li>
+</ol>
+
+
+<h4>设置ls配色</h4>
+
+<ol>
+<li>~/.bash_profile配置；<br/>
+<code>
+export CLICOLOR=1
+</code></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
