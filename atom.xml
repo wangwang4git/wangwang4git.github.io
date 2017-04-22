@@ -4,7 +4,7 @@
   <title><![CDATA[GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T18:50:50+08:00</updated>
+  <updated>2017-04-22T20:53:06+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -14,11 +14,39 @@
 
   
   <entry>
-    <title type="html"><![CDATA[iTerm2 Oh-my-zsh Config and Agnoster Theme Config]]></title>
+    <title type="html"><![CDATA[iTerm2 Oh-my-zsh配置与agnoster主题配置]]></title>
     <link href="http://wangwang4git.github.io/blog/2017/04/22/iterm2-oh-my-zsh-config-and-agnoster-theme-config/"/>
     <updated>2017-04-22T18:47:39+08:00</updated>
     <id>http://wangwang4git.github.io/blog/2017/04/22/iterm2-oh-my-zsh-config-and-agnoster-theme-config</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>先上一张效果图</p>
+
+<p><img src="http://wangwang4git.github.io/images/mac_iterm2/iterm2_effect.jpeg" title="iTerm2配置效果图" ></p>
+
+<h4>配置过程如下</h4>
+
+<ol>
+<li><p>下载iTerm2</p>
+
+<blockquote><p>链接：<a href="http://www.iterm2.com/">http://www.iterm2.com/</a></p></blockquote></li>
+<li><p>下载oh-my-zsh</p>
+
+<blockquote><p>链接：<a href="https://github.com/robbyrussell/oh-my-zsh">https://github.com/robbyrussell/oh-my-zsh</a><br/>
+查看当前终端是否已经启动zsh，命令<code>echo $0</code>，如果不是zsh使用命令<code>chsh -s /bin/zsh</code>修改<br/>
+查看系统支持的sh环境，命令<code>cat /etc/shell</code></p></blockquote></li>
+<li><p>安装Powerline对应的字体库</p>
+
+<blockquote><p>Powerline链接：<a href="http://powerline.readthedocs.io/en/master/">http://powerline.readthedocs.io/en/master/</a><br/>
+为了展示agnoster主题提示符里的三角形，需要Powerline字体库的支持<br/>
+使用pip安装，安装命令<code>pip install powerline-status</code>；如果没有pip，请先安装pip，安装pip命令<code>sudo easy_install pip</code><br/>
+字体库链接：<a href="https://github.com/powerline/fonts">https://github.com/powerline/fonts</a><br/>
+使用git clone下来字体库仓库，进入仓库根目录，执行<code>install.sh</code>安装</p></blockquote></li>
+<li><p>设置iTerm2字体</p>
+
+<blockquote><p>进入iTerm2设置-Profiles-Text-Font，选择Powerline字体<code>12pt Meslo LG S DZ Regular for Powerline</code></p></blockquote></li>
+</ol>
+
+
+<p><img src="http://wangwang4git.github.io/images/mac_iterm2/iterm2_font_config.jpeg" title="iTerm2字体设置" ></p>
 ]]></content>
   </entry>
   
@@ -48,7 +76,7 @@
 </ol>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -63,21 +91,22 @@
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>buildscript {
-</span><span class='line'>    repositories {
-</span><span class='line'>        maven {
-</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
-</span><span class='line'>        }
-</span><span class='line'>    }
-</span><span class='line'>}
+</pre></td><td class='code'><pre><code class='groovy'><span class='line'><span class="n">buildscript</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">repositories</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">maven</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">url</span> <span class="s1">&#39;http://maven.aliyun.com/nexus/content/groups/public/‘</span>
+</span><span class='line'><span class="s1">        }</span>
+</span><span class='line'><span class="s1">    }</span>
+</span><span class='line'><span class="s1">}</span>
 </span><span class='line'>
-</span><span class='line'>allprojects {
-</span><span class='line'>    repositories {
-</span><span class='line'>        maven {
-</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
-</span><span class='line'>        }
-</span><span class='line'>    }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'><span class="s1">allprojects {</span>
+</span><span class='line'><span class="s1">    repositories {</span>
+</span><span class='line'><span class="s1">        maven {</span>
+</span><span class='line'><span class="s1">            url &#39;</span><span class="nl">http:</span><span class="c1">//maven.aliyun.com/nexus/content/groups/public/‘</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
@@ -107,7 +136,7 @@
 
 <p>引用凤凰网资讯男子研发软件盗9000万份论文开网站两年赚千万：</p>
 
-<p><img src="../images/paperpass/PaperPass1.png" alt="PaperPass作者被逮捕" /></p>
+<p><img src="http://wangwang4git.github.io/images/paperpass/PaperPass1.png" title="PaperPass作者被逮捕" ></p>
 
 <p>事件缘由总结如下：<br/>
 1. 2007年左右A入学南京某高校，追随导师成立论文比对系统PaperPass团队；<br/>
@@ -142,7 +171,7 @@
 <ol>
 <li>进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；</li>
 <li>iTerm2设置->Profiles->Colors->Color Presets…;<br/>
-<img src="../images/mac_iterm2/iterm2_theme_config.jpeg" alt="iterm2主题配置" /></li>
+<img src="http://wangwang4git.github.io/images/mac_iterm2/iterm2_theme_config.jpeg" title="iterm2主题配置" ></li>
 </ol>
 
 
@@ -154,12 +183,13 @@
 </ol>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>syntax enable
-</span><span class='line'>set background=dark
-</span><span class='line'>colorscheme solarized</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>syntax <span class="nb">enable</span>
+</span><span class='line'><span class="nb">set </span><span class="nv">background</span><span class="o">=</span>dark
+</span><span class='line'>colorscheme solarized
+</span></code></pre></td></tr></table></div></figure>
 
 
 <h4>设置ls配色</h4>
@@ -169,8 +199,9 @@
 </ol>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>export CLICOLOR=1</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">export </span><span class="nv">CLICOLOR</span><span class="o">=</span>1
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
