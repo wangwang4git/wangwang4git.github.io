@@ -24,9 +24,11 @@ categories:
 
 你也许很奇怪，PaperPass发展好端端的，测试版、1.0、2.0，怎么突然关闭熄火了？2012年12月PaperPass经营者A(出于尊重，化名代替)因涉嫌非法侵入计算机信息系统罪被南京玄武警方批准逮捕。问题就出在2.0版本！  
 
+<!--more-->
+
 引用凤凰网资讯男子研发软件盗9000万份论文开网站两年赚千万：  
 
-![PaperPass作者被逮捕](../images/paperpass/PaperPass1.png)
+{% img center /images/paperpass/PaperPass1.png PaperPass作者被逮捕 %}  
 
 事件缘由总结如下：  
 1. 2007年左右A入学南京某高校，追随导师成立论文比对系统PaperPass团队；  

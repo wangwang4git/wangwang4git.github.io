@@ -13,12 +13,14 @@ categories: Mac
 #### 设置配色方案
 1. 进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；  
 2. iTerm2设置->Profiles->Colors->Color Presets…;  
-![item2主题配置](../images/mac_iterm2/iterm2_theme_config.jpeg)
+{% img center /images/mac_iterm2/iterm2_theme_config.jpeg iterm2主题配置 %}  
+
+<!--more-->
 
 #### 设置VIM配色
 1. 进入目录solarized/vim-colors-solarized/colors，拷贝solarized.vim到目录~/.vim/colors；  
 2. 配置vim.rc；  
-```
+```sh
 syntax enable
 set background=dark
 colorscheme solarized
@@ -26,6 +28,6 @@ colorscheme solarized
 
 #### 设置ls配色
 1. ~/.bash_profile配置；  
-```
+```sh
 export CLICOLOR=1
 ```
