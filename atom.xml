@@ -4,7 +4,7 @@
   <title><![CDATA[GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T17:56:09+08:00</updated>
+  <updated>2017-04-22T18:08:39+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AS新打开工程Gradle下载慢问题fix]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/22/android-studio-new-project-gradle-config/"/>
+    <updated>2017-04-22T18:01:00+08:00</updated>
+    <id>http://wangwang4git.github.io/blog/2017/04/22/android-studio-new-project-gradle-config</id>
+    <content type="html"><![CDATA[<h4>打开新工程，下载Gradle慢问题fix</h4>
+
+<ol>
+<li>切到目录.gradle/wrapper/dists/，查看当前在下载的版本；</li>
+<li>搜索对应Gradle版本下载；
+
+<blockquote><p>参考链接：<a href="http://www.androiddevtools.cn/">http://www.androiddevtools.cn/</a><br/>
+不推荐Gradle官网，慢</p></blockquote></li>
+<li>切到目录.gradle/wrapper/dists/版本XX/XXXX，删除对应版本XX.part文件；</li>
+<li>拷贝下载的对应版本Gradle文件至目录.gradle/wrapper/dists/版本XX/XXXX；</li>
+<li>重启AS；</li>
+</ol>
+
+
+<h4>构建新工程，下载依赖包慢问题fix</h4>
+
+<ol>
+<li>修改项目根build.gradle配置文件，引入阿里云私服；</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>buildscript {
+</span><span class='line'>    repositories {
+</span><span class='line'>        maven {
+</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>allprojects {
+</span><span class='line'>    repositories {
+</span><span class='line'>        maven {
+</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PaperPass使用体验一]]></title>

@@ -5,13 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Hello World - GoodMan007</title>
+  <title>AS新打开工程Gradle下载慢问题fix - GoodMan007</title>
   <meta name="author" content="victor">
 
   
-  <meta name="description" content="hello world from gitpages
-by octopress
-">
+  <meta name="description" content="打开新工程，下载Gradle慢问题fix 切到目录.gradle/wrapper/dists/，查看当前在下载的版本；
+搜索对应Gradle版本下载； 参考链接：http://www.androiddevtools.cn/
+不推荐Gradle官网，慢
+切到目录.gradle/wrapper/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +21,7 @@ by octopress
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wangwang4git.github.io/blog/2017/04/22/hello-world/">
+  <link rel="canonical" href="http://wangwang4git.github.io/blog/2017/04/22/android-studio-new-project-gradle-config/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="GoodMan007" type="application/atom+xml">
@@ -70,7 +71,7 @@ by octopress
   
   <header>
     
-      <h1 class="entry-title">Hello World</h1>
+      <h1 class="entry-title">AS新打开工程Gradle下载慢问题fix</h1>
     
     
       <p class="meta">
@@ -79,17 +80,65 @@ by octopress
 
 
 
-<time class='entry-date' datetime='2017-04-22T16:29:59+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2017</span></span> <span class='time'>4:29 pm</span></time>
+<time class='entry-date' datetime='2017-04-22T18:01:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2017</span></span> <span class='time'>6:01 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>hello world</h2>
+<div class="entry-content"><h4>打开新工程，下载Gradle慢问题fix</h4>
 
-<blockquote><p>from gitpages<br/>
-by octopress</p></blockquote>
+<ol>
+<li>切到目录.gradle/wrapper/dists/，查看当前在下载的版本；</li>
+<li>搜索对应Gradle版本下载；
+
+<blockquote><p>参考链接：<a href="http://www.androiddevtools.cn/">http://www.androiddevtools.cn/</a><br/>
+不推荐Gradle官网，慢</p></blockquote></li>
+<li>切到目录.gradle/wrapper/dists/版本XX/XXXX，删除对应版本XX.part文件；</li>
+<li>拷贝下载的对应版本Gradle文件至目录.gradle/wrapper/dists/版本XX/XXXX；</li>
+<li>重启AS；</li>
+</ol>
+
+
+<h4>构建新工程，下载依赖包慢问题fix</h4>
+
+<ol>
+<li>修改项目根build.gradle配置文件，引入阿里云私服；</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>buildscript {
+</span><span class='line'>    repositories {
+</span><span class='line'>        maven {
+</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>allprojects {
+</span><span class='line'>    repositories {
+</span><span class='line'>        maven {
+</span><span class='line'>            url 'http://maven.aliyun.com/nexus/content/groups/public/‘
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -105,7 +154,7 @@ by octopress</p></blockquote>
 
 
 
-<time class='entry-date' datetime='2017-04-22T16:29:59+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2017</span></span> <span class='time'>4:29 pm</span></time>
+<time class='entry-date' datetime='2017-04-22T18:01:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2017</span></span> <span class='time'>6:01 pm</span></time>
       
 
 
@@ -113,7 +162,7 @@ by octopress</p></blockquote>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wangwang4git.github.io/blog/2017/04/22/hello-world/" data-via="" data-counturl="http://wangwang4git.github.io/blog/2017/04/22/hello-world/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wangwang4git.github.io/blog/2017/04/22/android-studio-new-project-gradle-config/" data-via="" data-counturl="http://wangwang4git.github.io/blog/2017/04/22/android-studio-new-project-gradle-config/" >Tweet</a>
   
   
   
@@ -122,8 +171,8 @@ by octopress</p></blockquote>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2017/04/22/paperpass-experience-1/" title="Previous Post: PaperPass使用体验一">&laquo; PaperPass使用体验一</a>
       
-        <a class="basic-alignment right" href="/blog/2017/04/22/mac-item2-solarized-theme-config/" title="Next Post: Mac终端Item2 Solarized主题配置">Mac终端Item2 Solarized主题配置 &raquo;</a>
       
     </p>
   </footer>
