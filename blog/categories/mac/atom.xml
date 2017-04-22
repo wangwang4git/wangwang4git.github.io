@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T18:44:05+08:00</updated>
+  <updated>2017-04-22T18:50:50+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -32,7 +32,7 @@
 <ol>
 <li>进入目录solarized/iterm2-colors-solarized，双击Solarized Dark.itermcolors、Solarized Light.itermcolors导入主题；</li>
 <li>iTerm2设置->Profiles->Colors->Color Presets…;<br/>
-<img src="../images/mac_iterm2/iterm2_theme_config.jpeg" alt="item2主题配置" /></li>
+<img src="../images/mac_iterm2/iterm2_theme_config.jpeg" alt="iterm2主题配置" /></li>
 </ol>
 
 
