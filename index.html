@@ -9,8 +9,10 @@
   <meta name="author" content="victor">
 
   
-  <meta name="description" content="先上一张效果图 配置过程如下 1. 下载iTerm2 链接：http://www.iterm2.com/ 2. 下载oh-my-zsh 链接：https://github.com/robbyrussell/oh-my-zsh
-查看当前终端是否已经启动zsh，命令echo $0， &hellip;">
+  <meta name="description" content="QuickLook功能异常强大，一个空格键，即可以预览众多格式文件，比如pdf、图片等。
+但是也有一些文件没法预览，比如md文件，即MarkDown文档。
+那么有没有办法扩充预览的能力呢？答案就是安装插件！
+比如MarkDown文件预览就有一个QLMarkdown插件，github链接。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +26,9 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="GoodMan007" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+  <script src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js
+"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -66,6 +70,84 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/04/30/mac-quicklook-plugins/">Mac QuickLook Plugin推荐</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-04-30T23:55:30+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>11:55 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>QuickLook功能异常强大，一个空格键，即可以预览众多格式文件，比如pdf、图片等。<br/>
+但是也有一些文件没法预览，比如<code>md</code>文件，即MarkDown文档。<br/>
+那么有没有办法扩充预览的能力呢？答案就是安装插件！<br/>
+比如MarkDown文件预览就有一个<code>QLMarkdown</code>插件，<a href="https://github.com/toland/qlmarkdown">github链接</a>。</p>
+
+<p>安装QuickLook有两种方法，分别介绍如下：</p>
+
+<h4>自动安装</h4>
+
+<p>使用<code>brew cask</code>安装卸载软件，如果你还不知道brew、cask请自行Google。</p>
+
+<h6>1. 安装</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>brew cask install &lt;pluginname&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h6>2. 卸载</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>brew cask uninsatll &lt;pluginname&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>手动安装</h4>
+
+<p>如果不能通过cask安装卸载，可以采用手动方式安装卸载。</p>
+
+<h6>1. 卸载对应插件的二进制包，一般可以从github仓库找到下载链接，解压获取.qlgenerator插件文件；</h6>
+
+<h6>2. 将插件文件copy到~/Library/quicklook文件夹，如果没有quicklook文件夹自己创建一个；</h6>
+
+<h6>3. 在终端执行如下命令生效</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>qlmanage -r
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h6>4. 如果要卸载对应插件，直接在~/Library/quicklook文件夹删除对应.qlgenerator文件即可；</h6>
+
+<h4>插件推荐</h4>
+
+<p>讲完了如何安装插件，那有哪一些插件值得推荐呢，可以参考这个网站<a href="http://www.quicklookplugins.com/">QuickLook Plugins List</a>，里面有相当多的插件，可以按自己需要安装喜欢的插件。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2017/04/30/mac-quicklook-plugins/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -320,6 +402,10 @@ by octopress</p></blockquote>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2017/04/30/mac-quicklook-plugins/">Mac QuickLook Plugin推荐</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2017/04/22/iterm2-oh-my-zsh-config-and-agnoster-theme-config/">iTerm2 Oh-my-zsh配置与agnoster主题配置</a>
       </li>
     
@@ -333,10 +419,6 @@ by octopress</p></blockquote>
     
       <li class="post">
         <a href="/blog/2017/04/22/mac-iterm2-solarized-theme-config/">Mac终端iTerm2 Solarized主题配置</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/04/22/hello-world/">Hello World</a>
       </li>
     
   </ul>

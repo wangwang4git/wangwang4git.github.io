@@ -4,7 +4,7 @@
   <title><![CDATA[GoodMan007]]></title>
   <link href="http://wangwang4git.github.io/atom.xml" rel="self"/>
   <link href="http://wangwang4git.github.io/"/>
-  <updated>2017-04-22T22:09:02+08:00</updated>
+  <updated>2017-05-03T00:02:09+08:00</updated>
   <id>http://wangwang4git.github.io/</id>
   <author>
     <name><![CDATA[victor]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac QuickLook Plugin推荐]]></title>
+    <link href="http://wangwang4git.github.io/blog/2017/04/30/mac-quicklook-plugins/"/>
+    <updated>2017-04-30T23:55:30+08:00</updated>
+    <id>http://wangwang4git.github.io/blog/2017/04/30/mac-quicklook-plugins</id>
+    <content type="html"><![CDATA[<p>QuickLook功能异常强大，一个空格键，即可以预览众多格式文件，比如pdf、图片等。<br/>
+但是也有一些文件没法预览，比如<code>md</code>文件，即MarkDown文档。<br/>
+那么有没有办法扩充预览的能力呢？答案就是安装插件！<br/>
+比如MarkDown文件预览就有一个<code>QLMarkdown</code>插件，<a href="https://github.com/toland/qlmarkdown">github链接</a>。</p>
+
+<p>安装QuickLook有两种方法，分别介绍如下：</p>
+
+<h4>自动安装</h4>
+
+<p>使用<code>brew cask</code>安装卸载软件，如果你还不知道brew、cask请自行Google。</p>
+
+<h6>1. 安装</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>brew cask install &lt;pluginname&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h6>2. 卸载</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>brew cask uninsatll &lt;pluginname&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>手动安装</h4>
+
+<p>如果不能通过cask安装卸载，可以采用手动方式安装卸载。</p>
+
+<h6>1. 卸载对应插件的二进制包，一般可以从github仓库找到下载链接，解压获取.qlgenerator插件文件；</h6>
+
+<h6>2. 将插件文件copy到~/Library/quicklook文件夹，如果没有quicklook文件夹自己创建一个；</h6>
+
+<h6>3. 在终端执行如下命令生效</h6>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>qlmanage -r
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h6>4. 如果要卸载对应插件，直接在~/Library/quicklook文件夹删除对应.qlgenerator文件即可；</h6>
+
+<h4>插件推荐</h4>
+
+<p>讲完了如何安装插件，那有哪一些插件值得推荐呢，可以参考这个网站<a href="http://www.quicklookplugins.com/">QuickLook Plugins List</a>，里面有相当多的插件，可以按自己需要安装喜欢的插件。</p>
+
+<!--more-->
+
+
+<p>这里推荐一些开发会用到的插件：</p>
+
+<h6>1. QLMarkdown</h6>
+
+<p><a href="https://github.com/toland/qlmarkdown">https://github.com/toland/qlmarkdown</a><br/>
+预览MarkDown文件</p>
+
+<h6>2. QuicklookStephen</h6>
+
+<p><a href="https://github.com/whomwah/qlstephen">https://github.com/whomwah/qlstephen</a><br/>
+预览无文件扩展名的文本文件，比如开发常用到的如下文本文件，支持预览的感觉特别赞</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>README
+</span><span class='line'>INSTALL
+</span><span class='line'>Capfile
+</span><span class='line'>CHANGELOG
+</span><span class='line'>.gitignore
+</span><span class='line'>...
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h6>3. qlImageSize</h6>
+
+<p><a href="https://github.com/Nyx0uf/qlImageSize">https://github.com/Nyx0uf/qlImageSize</a><br/>
+在预览窗口title bar上展示图片尺寸与大小，并且对于Web、bpg支持预览，在Finder中也会展示图片尺寸，也能预览<br/>
+这个插件强烈推荐，效果如下：</p>
+
+<p><img class="center" src="http://wangwang4git.github.io/images/quicklook/qlImageSize01.png" title="预览窗口title bar效果" ></p>
+
+<p><img class="center" src="http://wangwang4git.github.io/images/quicklook/qlImageSize02.png" title="Finder效果" ></p>
+
+<h4>参考链接</h4>
+
+<ol>
+<li><a href="https://medium.com/@Chenz5dong/%E9%82%A3%E4%BA%9B%E5%BC%BA%E5%A4%A7%E7%9A%84-%E9%A2%84%E8%A7%88-%E6%8F%92%E4%BB%B6-mac-5d9b6f31efdd">那些强大的「预览」插件</a></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iTerm2 Oh-my-zsh配置与agnoster主题配置]]></title>
